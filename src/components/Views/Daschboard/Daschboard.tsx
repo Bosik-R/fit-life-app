@@ -1,10 +1,21 @@
 import React from 'react';
+import styled from 'styled-components';
+import DashboardNavigation from '../../DashboardNavigation/DashboardNavigation';
+import MealCalendar from '../../MealCalendar/MealCalendar';
 
-const Daschboard = () => {
+const DashboardWrapper = styled.section`
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+`;
+
+const Daschboard: React.FC = () => {
 	return (
-		<div>
-			<h1>Daschboard</h1>
-		</div>
+		<DashboardWrapper>
+			<DashboardNavigation />
+			<MealCalendar />
+		</DashboardWrapper>
 	);
 };
 

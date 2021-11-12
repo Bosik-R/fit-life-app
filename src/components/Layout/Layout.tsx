@@ -8,13 +8,17 @@ import Footer from '../Footer/Footer';
 
 const Container = styled.div`
 	width: 100%;
-	background-color: #f9f9f9;
+	background-color: ${({ theme }) => theme.color.bgSection};
 	display: flex;
 	justify-content: center;
 `;
 
 const Wrapper = styled.div`
 	width: ${({ theme }) => theme.appWidth};
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	margin: 23px 15px;
 `;
 
 const Layout: React.FC = ({ children }) => {
@@ -23,8 +27,10 @@ const Layout: React.FC = ({ children }) => {
 			<GlobalStyles />
 			<Header />
 			<Container>
-				<Wrapper>{children}</Wrapper>
-				<Footer />
+				<Wrapper>
+					{children}
+					<Footer />
+				</Wrapper>
 			</Container>
 		</ThemeProvider>
 	);

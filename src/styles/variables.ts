@@ -7,5 +7,8 @@ export const variables = {
 		bgSection: '#f9f9f9',
 		border: '#cdcdcd',
 		fontLight: '#BDBDBD',
+		mealCalendarFont: '#828282',
+		gradientFirst: 'rgba(176, 176, 176, 0.1)',
+		gradientSecond: 'rgba(177, 177, 177, 0.1)',
 	},
 };

@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
-	margin: 23px 15px;
+	margin: 22px 15px;
 `;
 
 const Layout: React.FC = ({ children }) => {

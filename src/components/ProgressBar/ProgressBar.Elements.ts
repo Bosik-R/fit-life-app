@@ -12,13 +12,13 @@ export const Title = styled.p`
 
 export const ProgressDotsWrapper = styled.div`
 	width: 230px;
-	height: 25px;
+	height: 35px;
 	display: flex;
 `;
 
 export const DotWrapper = styled.div`
 	width: 10px;
-	height: 27px;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -40,7 +40,8 @@ export const Dot = styled.span<DotProps>`
 	border-radius: 50%;
 	border: 2px solid;
 	margin-bottom: 6px;
-	background-color: ${({ status }) => (status === 'completed' ? '#B2C200' : status === 'incompleted' ? '#DBDBDB' : '#ffffff')};
+	background-color: ${({ status }) =>
+		status === 'completed' ? '#B2C200' : status === 'incompleted' ? '#DBDBDB' : '#ffffff'};
 	border-color: ${({ status }) => (status === 'completed' ? '#B2C200' : '#DBDBDB')};
 	z-index: ${({ status }) => (status === 'completed' ? '2' : '1')};
 

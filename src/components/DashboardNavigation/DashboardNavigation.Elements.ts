@@ -7,5 +7,14 @@ export const Wrapper = styled.section`
 	justify-content: space-between;
 	align-items: stretch;
 	margin-bottom: 16px;
-	border: 1px solid red;
+`;
+
+export const ProgressBarWrapper = styled.div``;
+
+export const WeekSliderWrapper = styled.div`
+	justify-self: center;
+`;
+
+export const ProteinSelectorWrapper = styled.div`
+	justify-self: flex-end;
 `;

@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProteinSelector: React.FC = () => {
 	return (
-		<div>
+		<div style={{ width: '230px' }}>
 			<h1>ProteinSelector</h1>
 		</div>
 	);

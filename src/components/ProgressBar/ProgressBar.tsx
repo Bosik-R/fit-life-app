@@ -1,13 +1,13 @@
 import React from 'react';
 import * as S from './ProgressBar.Elements';
-
-const data = {
-	dietLength: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
-	activeIndex: 6,
-};
+import { data } from '../../data';
+// const data = {
+// 	dietLength: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+// 	activeIndex: 2,
+// };
 
 const ProgressBar: React.FC = () => {
-	const { dietLength, activeIndex } = data;
+	const { dietLength, activeWeekIndex } = data;
 
 	return (
 		<S.ProgressBarWrapper>
@@ -15,7 +15,15 @@ const ProgressBar: React.FC = () => {
 			<S.ProgressDotsWrapper>
 				{dietLength.map((week, index) => (
 					<S.DotWrapper>
-						<S.Dot index={index} status={index < activeIndex ? 'completed' : index > activeIndex ? 'incompleted' : 'active'}></S.Dot>
+						<S.Dot
+							index={index}
+							status={
+								index < activeWeekIndex
+									? 'completed'
+									: index > activeWeekIndex
+									? 'incompleted'
+									: 'active'
+							}></S.Dot>
 						<S.Week>{week}</S.Week>
 					</S.DotWrapper>
 				))}

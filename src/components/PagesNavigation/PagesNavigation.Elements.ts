@@ -15,8 +15,8 @@ export const PageLink = styled(NavLink)`
 	color: ${({ theme }) => theme.color.navFont};
 	font-size: 14px;
 	text-transform: uppercase;
-	font-weight: bold;
-	letter-spacing: 0.5px;
+	font-weight: bolder;
+	letter-spacing: 1px;
 	padding: 10px;
 
 	&::after {

@@ -12,4 +12,9 @@ export const Container = styled.header`
 export const Wrapper = styled.div`
 	max-width: 979px;
 	width: 100%;
+	margin: 0 15px;
+	padding-left: 118px;
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
 `;

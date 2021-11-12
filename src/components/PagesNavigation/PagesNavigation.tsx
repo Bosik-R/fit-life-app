@@ -1,7 +1,7 @@
 import React from 'react';
-import * as S from './PagesNav.Elements';
+import * as S from './PagesNavigation.Elements';
 
-const PagesNav: React.FC = () => {
+const PagesNavigation: React.FC = () => {
 	return (
 		<S.Wrapper>
 			<S.PageLink to='/'>dashboard</S.PageLink>
@@ -11,4 +11,4 @@ const PagesNav: React.FC = () => {
 	);
 };
 
-export default PagesNav;
+export default PagesNavigation;

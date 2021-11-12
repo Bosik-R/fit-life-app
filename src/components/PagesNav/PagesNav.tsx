@@ -1,14 +1,14 @@
 import React from 'react';
-//import * as S from './pagesNav.Elements';
+import * as S from './PagesNav.Elements';
 
-const PageNav: React.FC = () => {
+const PagesNav: React.FC = () => {
 	return (
-		<div>
-			<a href='/'>daschboard</a>
-			<a href='/recipes'>recipes</a>
-			<a href='/challenge'>challenge</a>
-		</div>
+		<S.Wrapper>
+			<S.PageLink to='/'>dashboard</S.PageLink>
+			<S.PageLink to='/recipes'>recipes</S.PageLink>
+			<S.PageLink to='/challenge'>challenge</S.PageLink>
+		</S.Wrapper>
 	);
 };
 
-export default PageNav;
+export default PagesNav;

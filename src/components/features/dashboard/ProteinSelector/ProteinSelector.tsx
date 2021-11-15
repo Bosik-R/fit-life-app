@@ -3,12 +3,6 @@ import * as S from './ProteinSelector.Elements';
 
 import { data } from '../../../../data';
 
-// interface ProtienOptionProps {
-// 	id: string;
-// 	svg: string;
-// 	selected: boolean;
-// }
-
 const ProteinSelector: React.FC = () => {
 	return (
 		<S.Wrapper>

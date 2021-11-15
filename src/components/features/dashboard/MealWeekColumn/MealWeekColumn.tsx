@@ -3,9 +3,9 @@ import * as S from './MealWeekColumn.Elements';
 import workoutDone from '../../../../images/workoutDone.svg';
 import workoutNotDone from '../../../../images/workoutNotDone.svg';
 import done from '../../../../images/done.svg';
-import mealDone from '../../../../images/mealDone.svg';
+import MealCard from '../MealCard/MealCard';
 
-interface Meal {
+export interface Meal {
 	id: string;
 	name: string;
 	image?: string;
@@ -26,10 +26,7 @@ const MealWeekColumn: React.FC<Props> = ({ day, active, meals, carbs, workout })
 				<S.Day active={active}>{day}</S.Day>
 			</S.RowTop>
 			{meals.map((meal, index) => (
-				<S.Row key={index} active={active}>
-					{meal.completed && <S.MealDone src={mealDone} />}
-					<S.MealName to={`/recipes/${meal.id}`}>{meal.name}</S.MealName>
-				</S.Row>
+				<MealCard key={index} meal={meal} active={active} />
 			))}
 
 			<S.RowBottom>

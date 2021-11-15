@@ -6,14 +6,14 @@ interface Props {
 }
 
 export const GuiltFreeWrapper = styled.div<Props>`
-	width: 128px;
+	width: 130px;
 	height: 100%;
 	margin-left: -2px;
 	border: 2px solid;
 	border-left-color: transparent;
 	border-top-color: #ffffff;
 	border-bottom-color: transparent;
-	border-right-color: #d8d8d8;
+	border-right-color: transparent;
 	${({ active, theme }) => (active ? `border-color: ${theme.color.primary}` : null)}
 `;
 
@@ -45,8 +45,8 @@ export const RowText = styled.span`
 	position: absolute;
 	text-transform: uppercase;
 	width: 280px;
-	bottom: 230px;
-	left: -63%;
+	bottom: 237px;
+	left: -60%;
 	font-size: 35px;
 	letter-spacing: 1px;
 	transform: rotate(270deg);

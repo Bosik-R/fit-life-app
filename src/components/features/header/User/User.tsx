@@ -7,11 +7,6 @@ const User: React.FC = () => {
 
 	return (
 		<S.Wrapper>
-			<S.UserMenu open={openMenu}>
-				<S.Option>Option 1</S.Option>
-				<S.Option>Option 2</S.Option>
-				<S.Option>Option 3</S.Option>
-			</S.UserMenu>
 			<S.ImageWrapper>
 				<S.UserImage src={UserImage} alt={UserImage} />
 			</S.ImageWrapper>

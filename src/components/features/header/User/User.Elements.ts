@@ -44,22 +44,3 @@ export const IconArrow = styled(ChevronDown)<UserMenuProps>`
 	cursor: pointer;
 	transition: transform 0.5s ease;
 `;
-
-export const UserMenu = styled.ul<UserMenuProps>`
-	position: absolute;
-	bottom: -120%;
-	transform: translateY(${({ open }) => (open ? '0' : '-101%')});
-	width: 100px;
-	padding: 10px;
-	z-index: 1;
-	border: 1px solid grey;
-	background-color: #ffffff;
-`;
-
-export const Option = styled.li`
-	width: 100%;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	padding-bottom: 5px;
-`;

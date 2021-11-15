@@ -6,9 +6,7 @@ const AppsInfo: React.FC = () => {
 	return (
 		<S.Wrapper>
 			<S.Title>Bod•ē Trainer in your pocket</S.Title>
-			<S.Content>
-				Lorem ipsum dolor sit amet, consect turadipiscing elit. Integer aliquet.
-			</S.Content>
+			<S.Content>Lorem ipsum dolor sit amet, consect turadipiscing elit. Integer aliquet.</S.Content>
 			<S.BtnWrapper>
 				<S.BtnApple>
 					<S.AppleIcon size='22' />

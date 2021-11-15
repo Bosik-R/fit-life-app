@@ -6,13 +6,13 @@ export const MealCalendarWrapper = styled.div`
 	border-radius: 5px 0 5px 5px;
 	display: flex;
 	overflow: hidden;
-	color: ${({ theme }) => theme.color.mediumFont};
+	color: ${({ theme }) => theme.color.navFont};
 	background-color: ${({ theme }) => theme.color.gradientSecond};
-	background: linear-gradient(160deg, ${({ theme }) => theme.color.gradientSecond} 3px, transparent 2px) 10px 0,
-		linear-gradient(-160deg, ${({ theme }) => theme.color.gradientSecond} 3px, transparent 2px) 10px 0,
-		linear-gradient(20deg, ${({ theme }) => theme.color.gradientSecond} 3px, transparent 2px),
-		linear-gradient(-20deg, ${({ theme }) => theme.color.gradientSecond} 3px, transparent 2px);
-	background-size: 20px 5px;
+	background: linear-gradient(160deg, ${({ theme }) => theme.color.gradientSecond} 2px, transparent 3px) 10px 0,
+		linear-gradient(-160deg, ${({ theme }) => theme.color.gradientSecond} 2px, transparent 3px) 10px 0,
+		linear-gradient(20deg, ${({ theme }) => theme.color.gradientSecond} 2px, transparent 3px),
+		linear-gradient(-20deg, ${({ theme }) => theme.color.gradientSecond} 2px, transparent 3px);
+	background-size: 20px 3px;
 	background-repeat: repeat;
 `;
 

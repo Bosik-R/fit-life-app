@@ -31,22 +31,28 @@ export const BtnWrapper = styled.div`
 
 export const BtnApple = styled.button`
 	position: relative;
-	padding: 8px 30px 8px 39px;
+	padding: 9px 30px 7px 39px;
 	font-size: 16px;
 	line-height: 16px;
 	border: 1px solid grey;
 	border-radius: 5px;
 	background-color: transparent;
-	transition: all 0.3s ease;
+	transition: all 0.2s ease;
 	color: ${({ theme }) => theme.color.mediumFont};
 
 	&:hover {
+		color: ${({ theme }) => theme.color.primary};
 		border-color: ${({ theme }) => theme.color.primary};
 	}
 `;
 
+export const BtnAndroid = styled(BtnApple)`
+	margin-left: 14px;
+`;
+
 const sharedStylesIcons = css`
 	position: absolute;
+	transition: all 0.2s ease;
 	color: ${({ theme }) => theme.color.appIcons};
 `;
 
@@ -54,21 +60,24 @@ export const AppleIcon = styled(LogoApple)`
 	${sharedStylesIcons};
 	top: 4px;
 	left: 10px;
+
+	${BtnApple}:hover & {
+		color: ${({ theme }) => theme.color.primary};
+	}
 `;
 
 export const AndroidIcon = styled(Android)`
 	${sharedStylesIcons};
 	top: 5px;
 	left: 10px;
+
+	${BtnAndroid}:hover & {
+		color: ${({ theme }) => theme.color.primary};
+	}
 `;
 
 export const ArrowIcon = styled(ChevronRight)`
 	position: absolute;
 	top: 9px;
 	right: 7px;
-`;
-
-export const BtnAndroid = styled(BtnApple)`
-	//padding: 7px 32px 7px 36px;
-	margin-left: 14px;
 `;

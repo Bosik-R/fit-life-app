@@ -1,21 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
-import DashboardNavigation from '../../DashboardNavigation/DashboardNavigation';
-import MealCalendar from '../../MealCalendar/MealCalendar';
-
-const DashboardWrapper = styled.section`
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: stretch;
-`;
+import * as S from './Daschboard.Elements';
+import DashboardNavigation from '../../Layout/DashboardNavigation/DashboardNavigation';
+import MealCalendar from '../../Layout/MealCalendar/MealCalendar';
 
 const Daschboard: React.FC = () => {
 	return (
-		<DashboardWrapper>
+		<S.DashboardWrapper>
 			<DashboardNavigation />
 			<MealCalendar />
-		</DashboardWrapper>
+		</S.DashboardWrapper>
 	);
 };
 

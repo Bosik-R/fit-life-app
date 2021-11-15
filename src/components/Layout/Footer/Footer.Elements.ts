@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-export const DashboardWrapper = styled.section`
+export const Wrapper = styled.div`
 	width: 100%;
+	height: 190px;
 	display: flex;
-	flex-direction: column;
 `;

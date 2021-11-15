@@ -42,6 +42,11 @@ const ButtonSharedStyles = css`
 	display: grid;
 	place-items: center;
 	transform: translateY(-50%);
+	transition: background-color 0.2s ease;
+
+	&:hover {
+		background-color: ${({ theme }) => theme.color.primary};
+	}
 `;
 
 export const BackBtn = styled(ButtonBack)`
@@ -57,8 +62,18 @@ export const NextBtn = styled(ButtonNext)`
 export const ArrowIconBack = styled(ChevronLeft)`
 	color: #747474;
 	margin-left: -2px;
+	transition: color 0.2s ease;
+
+	${BackBtn}:hover & {
+		color: #fff;
+	}
 `;
 export const ArrowIconNext = styled(ChevronRight)`
 	color: #747474;
 	margin-left: -2px;
+	transition: color 0.2s ease;
+
+	${NextBtn}:hover & {
+		color: #fff;
+	}
 `;

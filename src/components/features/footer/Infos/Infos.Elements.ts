@@ -30,9 +30,9 @@ export const Btn = styled.button`
 	border-radius: 5px;
 	background-color: transparent;
 	transition: all 0.3s ease;
+	color: ${({ theme }) => theme.color.mediumFont};
 
 	&:hover {
-		color: ${({ theme }) => theme.color.primary};
 		border-color: ${({ theme }) => theme.color.primary};
 	}
 `;

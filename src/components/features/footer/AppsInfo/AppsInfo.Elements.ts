@@ -1,6 +1,7 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { ChevronRight } from '@styled-icons/bootstrap/ChevronRight';
 import { LogoApple } from '@styled-icons/ionicons-solid/LogoApple';
+import { Android } from '@styled-icons/icomoon/Android';
 
 export const Wrapper = styled.div`
 	width: 369px;
@@ -25,38 +26,49 @@ export const Content = styled.p`
 `;
 
 export const BtnWrapper = styled.div`
-	margin: 10px 0;
+	margin: 8px 0;
 `;
 
 export const BtnApple = styled.button`
 	position: relative;
-	padding: 7px 30px 7px 36px;
+	padding: 8px 30px 8px 39px;
 	font-size: 16px;
+	line-height: 16px;
 	border: 1px solid grey;
 	border-radius: 5px;
 	background-color: transparent;
 	transition: all 0.3s ease;
+	color: ${({ theme }) => theme.color.mediumFont};
 
 	&:hover {
-		color: ${({ theme }) => theme.color.primary};
 		border-color: ${({ theme }) => theme.color.primary};
 	}
 `;
 
-export const Icon = styled(LogoApple)`
+const sharedStylesIcons = css`
 	position: absolute;
-	color: ${({ theme }) => theme.color.primary};
-	left: 10px;
+	color: ${({ theme }) => theme.color.appIcons};
+`;
+
+export const AppleIcon = styled(LogoApple)`
+	${sharedStylesIcons};
 	top: 4px;
+	left: 10px;
+`;
+
+export const AndroidIcon = styled(Android)`
+	${sharedStylesIcons};
+	top: 5px;
+	left: 10px;
 `;
 
 export const ArrowIcon = styled(ChevronRight)`
 	position: absolute;
-	top: 7px;
+	top: 9px;
 	right: 7px;
 `;
 
 export const BtnAndroid = styled(BtnApple)`
-	padding: 7px 32px 7px 36px;
+	//padding: 7px 32px 7px 36px;
 	margin-left: 14px;
 `;

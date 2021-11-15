@@ -18,39 +18,52 @@ export const OptionsWrapper = styled.div`
 	padding-left: 12px;
 `;
 
-export const OptionWrapper = styled.div`
-	position: relative;
-`;
-
-interface OptionProps {
-	selected: boolean;
+interface Props {
+	selectedOption: boolean;
 }
-export const Option = styled.img<OptionProps>`
-	${({ selected }) => (selected ? '' : '')}
-`;
+export const OptionWrapper = styled.div<Props>`
+	position: relative;
 
-export const Opt = styled.img`
-	&::before {
+	${({ selectedOption, theme }) =>
+		selectedOption
+			? ''
+			: `
+			&::before,
+			::after {
 		position: absolute;
 		content: '';
-		top: 50%;
-		left: 50%;
-		//transform: translate(-50%, -50%);
-		width: 3px;
-		height: 20px;
+		width: 2px;
+		height: 38px;
+		transform: rotate(45deg);
+		top: -8px;
+		//left: 15px;
 		z-index: 2;
-		background-color: ${({ theme }) => theme.color.proteinIconNegationBar};
 	}
+	
+	/* &::after {
+		position: absolute;
+		content: '';
+		width: 2px;
+		height: 38px;
+		transform: rotate(45deg);
+		top: -8px;
+		left: 12px;
+		background-color: white;
+		z-index: 2;
+	} */
+	
+	&::before {
+		left: 15px;
+		background-color: ${theme.color.lightGrey};
+	}
+	
+	&::after {
+		left: 12px;
+		background-color: ${theme.color.bgLight};
+	}
+		`}
 `;
 
-export const OptionNegation1 = styled.img`
-	position: absolute;
-	bottom: 0;
-	right: 2px;
-`;
-
-export const OptionNegation2 = styled.img`
-	position: absolute;
-	bottom: 0;
-	right: 5px;
+export const Option = styled.img`
+	cursor: pointer;
 `;

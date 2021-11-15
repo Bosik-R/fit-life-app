@@ -11,11 +11,10 @@ export const variables = {
 		border: '#cdcdcd',
 		fontLight: '#BDBDBD',
 		mediumFont: '#828282',
+		appIcons: '#a4a4a4',
 		gradientFirst: 'rgba(223,223,223, 0.2)',
-		//gradientSecond: 'rgba(177, 177, 177, 0.1)',
 		gradientSecond: 'rgba(216,216,216, 0.2)',
-		proteinIconNegationBar: '#D3D3D3',
+		lightGrey: '#D3D3D3',
 		dayFont: '#ADBB0C',
-		//color: #dfdfdf
 	},
 };

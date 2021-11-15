@@ -11,7 +11,6 @@ export const Wrapper = styled.div`
 `;
 
 export const ImageWrapper = styled.div`
-	position: relative;
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;

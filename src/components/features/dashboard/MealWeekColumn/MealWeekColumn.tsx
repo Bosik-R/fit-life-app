@@ -28,7 +28,7 @@ const MealWeekColumn: React.FC<Props> = ({ day, active, meals, carbs, workout })
 			{meals.map((meal, index) => (
 				<S.Row key={index} active={active}>
 					{meal.completed && <S.MealDone src={mealDone} />}
-					<S.MealName>{meal.name}</S.MealName>
+					<S.MealName to={`/recipes/${meal.id}`}>{meal.name}</S.MealName>
 				</S.Row>
 			))}
 

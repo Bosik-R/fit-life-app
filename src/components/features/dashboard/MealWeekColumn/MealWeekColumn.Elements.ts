@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 interface Props {
 	active: boolean;
@@ -46,7 +47,7 @@ export const MealDone = styled.img`
 	margin-top: -2px;
 `;
 
-export const MealName = styled.p`
+export const MealName = styled(Link)`
 	font-size: 13px;
 	line-height: 17px;
 	font-weight: 500;

@@ -10,8 +10,16 @@ const ProgressBar: React.FC = () => {
 			<S.Title>your 12 week progress</S.Title>
 			<S.ProgressDotsWrapper>
 				{dietLength.map((week, index) => (
-					<S.DotWrapper>
-						<S.Dot index={index} status={index < activeWeekIndex ? 'completed' : index > activeWeekIndex ? 'incompleted' : 'active'}></S.Dot>
+					<S.DotWrapper key={index}>
+						<S.Dot
+							index={index}
+							status={
+								index < activeWeekIndex
+									? 'completed'
+									: index > activeWeekIndex
+									? 'incompleted'
+									: 'active'
+							}></S.Dot>
 						<S.Week>{week}</S.Week>
 					</S.DotWrapper>
 				))}

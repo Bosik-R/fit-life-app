@@ -1,7 +1,40 @@
+import vegetables from './images/vegetables.svg';
+import dairy from './images/dairy.svg';
+import redMeat from './images/redMeat.svg';
+import fish from './images/fish.svg';
+import whiteMeat from './images/whiteMeat.svg';
+import negation1 from './images/negation1.svg';
+import negation2 from './images/negation2.svg';
+
 export const data = {
 	dietLength: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
-	weeks: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7', 'Week 8', 'Week 9', 'Week 10', 'Week 11', 'Week 12'],
+	weeks: [
+		'Week 1',
+		'Week 2',
+		'Week 3',
+		'Week 4',
+		'Week 5',
+		'Week 6',
+		'Week 7',
+		'Week 8',
+		'Week 9',
+		'Week 10',
+		'Week 11',
+		'Week 12',
+	],
 	activeWeekIndex: 6,
+
+	proteins: {
+		options: [
+			{ id: 'vegetables', svg: vegetables, selected: true },
+			{ id: 'dairy', svg: dairy, selected: true },
+			{ id: 'redMeat', svg: redMeat, selected: true },
+			{ id: 'fish', svg: fish, selected: false },
+			{ id: 'whiteMeat', svg: whiteMeat, selected: false },
+		],
+		negation1: negation1,
+		negation2: negation2,
+	},
 
 	week7: [
 		{
@@ -216,6 +249,6 @@ export const data = {
 
 	guiltFreeDay: {
 		day: 'DAY 70',
-		active: true,
+		active: false,
 	},
 };

@@ -44,9 +44,9 @@ export const Row = styled.div<Props>`
 export const RowText = styled.span`
 	position: absolute;
 	text-transform: uppercase;
-	width: 267px;
+	width: 280px;
 	bottom: 230px;
-	left: -57%;
+	left: -63%;
 	font-size: 35px;
 	letter-spacing: 1px;
 	transform: rotate(270deg);
@@ -55,15 +55,20 @@ export const RowText = styled.span`
 export const Smiley = styled(EmojiSmile)`
 	position: absolute;
 	bottom: 63px;
-	left: 48px;
+	left: 50%;
+	transform: translateX(-50%);
 `;
 
-export const RowBottom = styled.div`
+export const RowBottom = styled.button`
 	height: 69px;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 11px;
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
 `;
 
 export const Printer = styled.img``;
@@ -71,4 +76,5 @@ export const Printer = styled.img``;
 export const PrintText = styled.span`
 	font-size: 18px;
 	font-weight: 500;
+	color: ${({ theme }) => theme.color.mediumFont};
 `;

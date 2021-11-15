@@ -1,10 +1,19 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const Challenge = () => {
+const Wrapper = styled.section`
+	width: 100%;
+	height: 724px;
+	display: grid;
+	place-items: center;
+`;
+const Title = styled.h1``;
+
+const Challenge: React.FC = () => {
 	return (
-		<div>
-			<h1>Challenge</h1>
-		</div>
+		<Wrapper>
+			<Title>Challenge</Title>
+		</Wrapper>
 	);
 };
 

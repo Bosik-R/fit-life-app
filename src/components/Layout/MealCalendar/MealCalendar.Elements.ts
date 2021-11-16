@@ -41,6 +41,7 @@ export const SummaryCard = styled.div`
 export const CardTitle = styled.p`
 	text-align: center;
 	padding: 5px;
+	text-transform: uppercase;
 	border-bottom: 1px solid ${({ theme }) => theme.color.border};
 `;
 

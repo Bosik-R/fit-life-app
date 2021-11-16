@@ -5,6 +5,14 @@ export const Wrapper = styled.div`
 	width: 304px;
 	padding-left: 40px;
 	color: ${({ theme }) => theme.color.mediumFont};
+
+	@media (max-width: 425px) {
+		width: 100%;
+	}
+
+	@media (max-width: 1024px) {
+		padding: 20px;
+	}
 `;
 
 export const Title = styled.h1`

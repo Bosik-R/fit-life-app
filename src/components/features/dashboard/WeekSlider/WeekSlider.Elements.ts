@@ -8,6 +8,10 @@ export const WeekSliderWrapper = styled.div`
 	height: 100%;
 	display: flex;
 	align-items: center;
+
+	@media (max-width: 425px) {
+		margin: 15px 0;
+	}
 `;
 
 export const SliderWrapper = styled.div`

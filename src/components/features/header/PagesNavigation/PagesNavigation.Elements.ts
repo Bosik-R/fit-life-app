@@ -8,6 +8,12 @@ export const Wrapper = styled.nav`
 	justify-content: space-between;
 	padding: 0 21px;
 	column-gap: 9px;
+
+	@media (max-width: 425px) {
+		border-left: none;
+		padding: 0;
+		column-gap: 5px;
+	}
 `;
 
 export const PageLink = styled(NavLink)`
@@ -18,6 +24,11 @@ export const PageLink = styled(NavLink)`
 	font-weight: 800;
 	letter-spacing: 1px;
 	padding: 10px;
+
+	@media (max-width: 425px) {
+		font-size: 12px;
+		padding: 5px;
+	}
 
 	&::after {
 		content: '';

@@ -1,6 +1,6 @@
 export const variables = {
 	appWidth: '1000px',
-	borderLightMealCalendar: 'border-bottom: 2px solid #dfdfdf',
+	borderBottomLight: 'border-bottom: 2px solid #dfdfdf',
 	mealColumnBorder: '2px solid #dfdfdf',
 	color: {
 		primary: '#FF801A',
@@ -16,5 +16,6 @@ export const variables = {
 		gradientSecond: 'rgba(216,216,216, 0.2)',
 		lightGrey: '#D3D3D3',
 		dayFont: '#ADBB0C',
+		borderLight: '#dfdfdf',
 	},
 };

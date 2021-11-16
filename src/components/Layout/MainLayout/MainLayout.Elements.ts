@@ -8,9 +8,14 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-	width: ${({ theme }) => theme.appWidth};
+	max-width: ${({ theme }) => theme.appWidth};
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
-	margin: 12px 15px;
+	margin: 12px 0;
+
+	@media (max-width: 425px) {
+		margin: 0;
+	}
 `;

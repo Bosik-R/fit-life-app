@@ -10,7 +10,7 @@ export const Row = styled.div`
 	height: 92px;
 	display: grid;
 	place-items: center;
-	${({ theme }) => theme.borderLightMealCalendar}
+	${({ theme }) => theme.borderBottomLight}
 `;
 
 export const RowLast = styled(Row)`
@@ -36,7 +36,7 @@ export const RowTop = styled.div`
 export const RowBottom = styled.div`
 	width: 100%;
 	height: 35px;
-	${({ theme }) => theme.borderLightMealCalendar};
+	${({ theme }) => theme.borderBottomLight};
 `;
 
 export const RowWorkout = styled.div`

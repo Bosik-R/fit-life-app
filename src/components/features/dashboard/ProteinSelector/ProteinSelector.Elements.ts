@@ -2,6 +2,11 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
 	height: 100%;
+
+	@media (max-width: 425px) {
+		height: auto;
+		padding: 5px;
+	}
 `;
 export const Title = styled.p`
 	padding: 12px 10px 10px 12px;
@@ -9,6 +14,11 @@ export const Title = styled.p`
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	color: ${({ theme }) => theme.color.navFont};
+
+	@media (max-width: 425px) {
+		text-align: center;
+		padding: 5px;
+	}
 `;
 
 export const OptionsWrapper = styled.div`

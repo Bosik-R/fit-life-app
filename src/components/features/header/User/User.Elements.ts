@@ -43,4 +43,8 @@ export const IconArrow = styled(ChevronDown)<UserMenuProps>`
 	width: 12px;
 	cursor: pointer;
 	transition: transform 0.5s ease;
+
+	@media (max-width: 425px) {
+		display: none;
+	}
 `;

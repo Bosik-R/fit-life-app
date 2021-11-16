@@ -18,7 +18,7 @@ export const Wrapper = styled.div<Props>`
 	outline-offset: -2px;
 	transition: all 0.2s ease;
 
-	${({ active, theme }) => (active ? `border-color: ${theme.color.primary}` : null)}
+	${({ active, theme }) => (active ? `z-index: 2; border-color: ${theme.color.primary}` : null)}
 `;
 
 export const RowTop = styled.div`

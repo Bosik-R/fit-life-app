@@ -7,8 +7,18 @@ export const Wrapper = styled.div`
 	width: 369px;
 	padding: 0 50px;
 	color: ${({ theme }) => theme.color.mediumFont};
-	border-left: 1px solid #dfdfdf;
-	border-right: 1px solid #dfdfdf;
+	border-left: 1px solid ${({ theme }) => theme.color.borderLight};
+	border-right: 1px solid ${({ theme }) => theme.color.borderLight};
+
+	@media (max-width: 1024px) {
+		border: none;
+		padding: 20px;
+	}
+
+	@media (max-width: 425px) {
+		width: 100%;
+		border-bottom: 1px solid ${({ theme }) => theme.color.borderLight};
+	}
 `;
 
 export const Title = styled.h1`

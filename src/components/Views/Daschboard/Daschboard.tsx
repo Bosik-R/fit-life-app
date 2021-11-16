@@ -7,7 +7,7 @@ const Daschboard: React.FC = () => {
 	return (
 		<S.DashboardWrapper>
 			<DashboardNavigation />
-			<MealCalendar />
+			{/* <MealCalendar /> */}
 		</S.DashboardWrapper>
 	);
 };

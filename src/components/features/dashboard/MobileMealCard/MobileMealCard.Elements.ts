@@ -1,24 +1,27 @@
 import styled from 'styled-components';
 
-interface Props {
-	active: boolean;
-}
-
-export const Row = styled.div<Props>`
+export const Wrapper = styled.div`
 	position: relative;
-	width: 100%;
-	height: 92px;
-	color: ${({ active, theme }) => (active ? theme.color.fontDark : theme.color.mediumFont)};
+	width: 150px;
+	height: 150px;
+	color: ${({ theme }) => theme.color.navFont};
 	background-color: ${({ theme }) => theme.color.bgLight};
-	border-top: ${({ theme }) => theme.mealColumnBorder};
 	cursor: pointer;
+	overflow: hidden;
+	border-radius: 7px;
+	box-shadow: 1px 1px 11px 0px rgba(0, 0, 0, 0.8);
 `;
 
-export const MealImage = styled.img<Props>`
+export const MealTime = styled.p`
+	text-align: center;
+	padding: 5px;
+	border-bottom: 1px solid ${({ theme }) => theme.color.border};
+`;
+
+export const MealImage = styled.img`
 	position: absolute;
 	bottom: 0;
 	left: 50%;
-	opacity: ${({ active }) => (active ? '1' : '0.4')};
 	transform: translateX(-50%);
 `;
 
@@ -37,8 +40,4 @@ export const MealName = styled.p`
 	font-size: 13px;
 	line-height: 17px;
 	font-weight: 500;
-
-	${Row}:hover & {
-		color: ${({ theme }) => theme.color.primary};
-	}
 `;

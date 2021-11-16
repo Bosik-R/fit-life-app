@@ -10,7 +10,7 @@ export const Wrapper = styled.article`
 	align-items: stretch;
 	padding: 0 10px;
 
-	@media (max-width: 768px) {
+	@media (max-width: 767px) {
 		flex-direction: column;
 		height: auto;
 		margin-top: 0;
@@ -25,8 +25,7 @@ const Col = css`
 	@media (max-width: 767px) {
 		width: 100%;
 		flex-basis: 100%;
-		//justify-content: center;
-		padding: 5px 0;
+		padding: 10px 0;
 	}
 `;
 
@@ -70,21 +69,32 @@ export const MobileMenuProtein = styled.div<Props>`
 	top: 10px;
 	right: 0;
 	background-color: #fff;
-	border: 1px solid #000;
+	border: 1px solid ${({ theme }) => theme.color.border};
 	border-right: none;
 	border-radius: 5px 0 0 5px;
 	z-index: 3;
-	transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(268px)')};
+	transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(260px)')};
 	overflow: hidden;
 	transition: all 0.5s ease-in-out;
 `;
 
 export const Btn = styled.button`
-	writing-mode: vertical-lr;
-	padding: 11px 10px 11px 5px;
+	height: 65px;
+	width: 30px;
+	display: grid;
+	place-items: center;
 	border: none;
-	color: white;
-	font-size: 14px;
+	background-color: ${({ theme }) => theme.color.primary};
+`;
+
+export const Text = styled.span`
 	text-transform: uppercase;
-	background-color: orange;
+	font-size: 12px;
+	color: white;
+	writing-mode: vertical-lr;
+`;
+
+export const ColDaySlider = styled.div`
+	${Col};
+	order: 4;
 `;

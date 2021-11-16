@@ -6,7 +6,7 @@ import { useMediaQuery } from 'react-responsive';
 import UserMobile from '../../features/header/UserMobile/UserMobile';
 
 const Header: React.FC = () => {
-	const mobile = useMediaQuery({ query: '(max-width: 425px)' });
+	const mobile = useMediaQuery({ query: '(max-width: 768px)' });
 	const [open, setOpen] = useState(false);
 
 	return (

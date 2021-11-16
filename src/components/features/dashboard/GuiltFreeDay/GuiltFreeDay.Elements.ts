@@ -36,28 +36,25 @@ export const Row = styled.div<Props>`
 	position: relative;
 	width: 100%;
 	height: 458px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
 	background-color: ${({ theme }) => theme.color.bgLight};
 	border-top: ${({ theme }) => theme.mealColumnBorder};
 	color: ${({ active, theme }) => (active ? theme.color.fontDark : theme.color.mediumFont)};
 `;
 
 export const RowText = styled.span`
-	position: absolute;
+	writing-mode: vertical-rl;
 	text-transform: uppercase;
-	width: 280px;
-	bottom: 237px;
-	left: -60%;
 	font-size: 35px;
 	letter-spacing: 1px;
-	transform: rotate(270deg);
+	transform: rotate(180deg);
 `;
 
-export const Smiley = styled(EmojiSmile)`
-	position: absolute;
-	bottom: 63px;
-	left: 50%;
-	transform: translateX(-50%);
-`;
+export const Smiley = styled(EmojiSmile)``;
 
 export const RowBottom = styled.button`
 	height: 69px;

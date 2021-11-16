@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
 	color: ${({ theme }) => theme.color.mediumFont};
 
 	@media (max-width: 425px) {
+		margin-left: 0;
 		width: 100%;
 		border-bottom: 1px solid ${({ theme }) => theme.color.borderLight};
 	}

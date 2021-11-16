@@ -7,19 +7,21 @@ import MealCard from '../MealCard/MealCard';
 
 export interface Meal {
 	id: string;
+	time?: string;
 	name: string;
 	image?: string;
 	completed: boolean;
 }
 
-interface Props {
+export interface DayProps {
 	day: string;
 	active: boolean;
 	meals: Meal[];
 	carbs: string;
 	workout: boolean;
 }
-const MealWeekColumn: React.FC<Props> = ({ day, active, meals, carbs, workout }) => {
+
+const MealWeekColumn: React.FC<DayProps> = ({ day, active, meals, carbs, workout }) => {
 	return (
 		<S.Wrapper active={active}>
 			<S.RowTop>

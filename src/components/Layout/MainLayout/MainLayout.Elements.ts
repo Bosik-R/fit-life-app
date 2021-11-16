@@ -5,6 +5,7 @@ export const Container = styled.div`
 	background-color: ${({ theme }) => theme.color.bgSection};
 	display: flex;
 	justify-content: center;
+	overflow: hidden;
 `;
 
 export const Wrapper = styled.div`

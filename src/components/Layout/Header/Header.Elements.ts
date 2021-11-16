@@ -9,7 +9,7 @@ export const Container = styled.header`
 	background-color: ${({ theme }) => theme.color.bgLight};
 	border-bottom: 1px solid #c8c8c8;
 
-	@media (max-width: 425px) {
+	@media (max-width: 768px) {
 		height: 50px;
 	}
 `;
@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
 	align-items: stretch;
 	justify-content: space-between;
 
-	@media (max-width: 425px) {
+	@media (max-width: 768px) {
 		padding: 10px 5px;
 		padding-right: 40px;
 		margin: 0;

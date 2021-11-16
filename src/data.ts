@@ -23,6 +23,7 @@ export const data = {
 		negation2: negation2,
 	},
 
+	activeDayIndex: 1,
 	week7: [
 		{
 			day: 'DAY 64',
@@ -64,27 +65,32 @@ export const data = {
 			meals: [
 				{
 					id: '1',
+					time: '6:00 AM',
 					name: `Bod•ē Shake`,
 					image: './images/bode_shake.png',
 					completed: false,
 				},
 				{
 					id: '2',
+					time: '9:00 AM',
 					name: `Ham and Swiss Roll Ups`,
 					completed: false,
 				},
 				{
 					id: '3',
+					time: '12:00 AM',
 					name: `Turkey Melt`,
 					completed: false,
 				},
 				{
 					id: '4',
+					time: '3:00 PM',
 					name: `Bod•ē Burn with Mozzarella and Tomato Slices`,
 					completed: false,
 				},
 				{
 					id: '3',
+					time: '6:00 PM',
 					name: `Turkey Melt`,
 					completed: false,
 				},

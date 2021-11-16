@@ -3,42 +3,20 @@ import { ButtonBack, ButtonNext } from 'pure-react-carousel';
 import { ChevronLeft } from '@styled-icons/bootstrap/ChevronLeft';
 import { ChevronRight } from '@styled-icons/bootstrap/ChevronRight';
 
-export const WeekSliderWrapper = styled.div`
-	width: 300px;
-	height: 100%;
-	display: flex;
-	align-items: center;
-
-	@media (max-width: 425px) {
-		margin: 15px 0;
-		width: 100%;
-		height: 50px;
-	}
-`;
-
-export const SliderWrapper = styled.div`
+export const Wrapper = styled.div`
 	position: relative;
 	width: 100%;
 	height: 50px;
-	padding: 0 50px;
 `;
 
-export const Week = styled.h1`
+export const Day = styled.div`
 	width: 100%;
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	font-size: 48px;
-	line-height: 48px;
-	font-weight: 500;
-	letter-spacing: 0.7px;
+	height: 50px;
+	font-size: 36px;
+	line-height: 36px;
+	padding: 10px;
+	text-align: center;
 	color: ${({ theme }) => theme.color.primary};
-
-	@media (max-width: 425px) {
-		padding: 10px;
-		font-size: 36px;
-		line-height: 36px;
-	}
 `;
 
 const ButtonSharedStyles = css`
